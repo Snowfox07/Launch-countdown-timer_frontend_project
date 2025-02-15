@@ -1,4 +1,4 @@
-const countToDate = new Date().setHours(new Date().getHours() + 2080);
+const countToDate = new Date("March 31, 2025 23:59:59").getTime();
 let previous;
 setInterval(() => {
     const currentDate = new Date();

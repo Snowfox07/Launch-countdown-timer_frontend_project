@@ -12758,7 +12758,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
 :root{
     /* Primary */
 
-    --Grayish-blue: hsl(237, 18%, 59%);
+    --Grayish-blue: hsl(0, 0%, 100%);
     --Soft-red: hsl(345, 95%, 68%);
 
     /* Neutral */
@@ -12782,6 +12782,7 @@ img{
     display: block;
 }
 body {
+    background: url('images/background.png') no-repeat center center fixed;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 700;
     display: flex;
@@ -12791,8 +12792,8 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background-image: url(../images/bg-stars.svg);
-    background-color:var(--Very-dark-mostly-black-blue);
+    /*background-image: url(../images/bg-stars.svg);*/
+    /*background-color:var(--Very-dark-mostly-black-blue);*/
 }
 main{
     width: 100%;
@@ -12877,6 +12878,8 @@ p {
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    display: block !important; /* Đảm bảo hiển thị */
+    height: auto !important; /* Để footer không bị mất */
 }
 .footer > img {
     width: 250%;
@@ -12939,7 +12942,7 @@ p {
     .bottom,
     .top-flip,
     .bottom-flip {
-        height: 80px;
+        height: 73px;
         width: 150px;
         padding: 27px 16px;
     }
